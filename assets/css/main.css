@@ -587,11 +587,24 @@ span.answer .white{
 }
 .projects .block .wrapper #motivateme{
   background-image:url("../img/projects/motivate-me.png");
+  background-size: contain;
   background-color:#e4eef2;
 }
-.projects .block .wrapper #projectx{
-  background-image:url("../img/projects/projectx.png");
+.projects .block .wrapper #conversate{
+  background-image:url("../img/projects/conversate.jpg");
+  background-size: cover;
   background-color:#2d3439;
+}
+.projects .block .wrapper #neighcenters{
+  background-image:url("../img/projects/neighcenters.jpg");
+  background-size: contain;
+  background-color:rgb(201,96,38);
+}
+.projects .block .wrapper #letshang{
+  background-image:url("../img/projects/hangingout.png");
+  background-size: contain;
+  background-color: white;
+  border: 5px solid black;
 }
 
 .projects .block .wrapper a{

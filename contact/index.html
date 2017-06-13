@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="robots" content="index, follow">
-  <title>About &middot; Alexander Kim</title>
-  <meta name="description" content="Alexander Kim's about me">
+  <title>Contact &middot; Alexander Kim</title>
+  <meta name="description" content="Alexander Kim's Contact Page">
   <meta name="author" content="Alexander Kim, alex.kim@rice.edu, alexthkim@gmail.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic">
   <link rel="stylesheet" href="../assets/css/main.css">
@@ -27,26 +27,50 @@
         <li><a href="index.html" title="About">about</a></li>
         <li><a href="../codings/index.html" title="Codings">projects</a></li>
         <li><a href="../readings/index.html" title="Readings">readings</a></li>
-        <li><a href="contact/index.html" title="Contact">contact</a></li>
+        <li><a href="index.html" title="Contact">contact</a></li>
       </ul>
     </header>
 
     <div class="body">
       <div class="page">
-        <h1 class="page-title">About</h1>
+        <h1 class="page-title">Contact Me</h1>
         <article class="page-body">
-          <center><img class="bio-image-new" src="../assets/img/bio.jpg"/></center>
-          <p>Hi! My name is Alex Kim and welcome to my portfolio!</p>
-          <p>I’m a third-year undergraduate at Rice University looking to double major in Computer Science and Statistics. My passion in both fields has also brought me to pursue Machine Learning as a specialization to supplement my undergraduate degrees.
-            <br/><br/>
-            I am currently looking for a software enginnering internship that will provide me a environment to develop my computer science abilities and create lifelong connections with mentors and peers. My past experiences range from working on creating seamless and responsive UI to implementing probabilistic markov models, so I'm comfortable with practically anything.
-            <br/><br/>
-            Outside of my CS world, I'm quite an interesting person as well. Speedsolving rubik's cubes, dancing to EDM, and consuming sushi are only a few of my numerous hobbies, so feel free to reach out to me. I'm sure we'll have something to bond over!
-            <hr>
+          <a href="http://www.github.com/alexthkim" target="_blank">GitHub</a></li>
+          <br><br>
+          <a href="http://www.linkedin.com/in/alexthkim" target="_blank">LinkedIn</a></li>
+          <br><br>
+          <span id="mail">Email</span>
           </div>
         </div>
         <hr>
       </div>
     </div>
   </body>
+  <script>
+  function gen_mail_to_link(lhs, rhs, subject, comma) {
+    var mail = "";
+    if (comma) {
+      mail += "'";
+    }
+    mail += "<a href=\"mailto";
+    mail += (":" + lhs + "@");
+    mail += (rhs + "?subject=" + subject + "\">" + lhs + "@" + rhs + "<\/a>");
+    if (comma) {
+      mail += "'";
+    }
+    return mail;
+  }
+  var element = document.getElementById('mail');
+  if (element != null) {
+
+    element.innerHTML = gen_mail_to_link('alex.kim','rice.edu','Hello there!', true);
+
+  }
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-62796511-2', 'auto');
+  ga('send', 'pageview');
+  </script>
   </html>
