@@ -1,7 +1,3 @@
-html {
-  font-family:sans-serif;
-}
-
 body {
   margin:0;
 }
@@ -59,26 +55,8 @@ img {
   border:0;
 }
 
-svg:not(:root) {
-  overflow:hidden;
-}
-
 figure {
   margin:1em 40px
-}
-
-hr {
-  box-sizing:content-box;
-  height:0;
-}
-
-pre {
-  overflow:auto;
-}
-
-code,kbd,pre,samp {
-  font-family:monospace,monospace;
-  font-size:1em
 }
 
 fieldset {
@@ -111,7 +89,7 @@ html,body {
   margin:0;padding:0
 }
 html {
-  font-family:Georgia,serif;
+  font-family:"avenir",serif;
   font-size:16px
 }
 @media (min-width: 48em){
@@ -300,7 +278,7 @@ h1 {
 }
 
 .title {
-  font-family:apolline,serif
+  font-family: serif
 }
 
 .icon-folder2:before {
@@ -378,7 +356,7 @@ h1 {
   }
 }
 .masthead-title{
-  font-family:"apolline",serif
+  font-family:"avenir",serif
 }
 @media (min-width: 34em){
   .masthead-title{
@@ -429,9 +407,9 @@ h1 {
   margin-top:7px;
   height:28px
 }
-.page{
+/*.page{
   padding-bottom:4rem
-}
+}*/
 .page-title{
   margin-bottom:2rem
 }
@@ -606,6 +584,11 @@ span.answer .white{
   background-color: white;
   border: 5px solid black;
 }
+.projects .block .wrapper #findmyfood{
+  background-image:url("../img/projects/findmyfood.jpg");
+  background-size: contain;
+  background-color: rgb(221,204,174);
+}
 
 .projects .block .wrapper a{
   float:left;position:relative;
@@ -680,4 +663,9 @@ span.answer .white{
 .fa-file-pdf-o {
     background: grey;
     color: white;
+}
+
+.mini-title {
+    text-align: center;
+    margin-bottom: 2em;
 }
