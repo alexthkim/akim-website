@@ -584,6 +584,18 @@ span.answer .white{
   background-color: white;
   border: 5px solid black;
 }
+
+.projects .block .wrapper #clearbrain{
+  background-image:url("../img/projects/clearbrain.png");
+  background-size: contain;
+  background-color: rgb(249,249,249);
+}
+
+.projects .block .wrapper #munchr{
+  background-image:url("../img/projects/munchr.png");
+  background-size: contain;
+  background-color: rgb(52,70,86);
+}
 .projects .block .wrapper #findmyfood{
   background-image:url("../img/projects/findmyfood.jpg");
   background-size: contain;
